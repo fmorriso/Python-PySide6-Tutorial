@@ -1,6 +1,7 @@
 import sys
 import PySide6.QtCore
 
+
 def get_python_version() -> str:
     return f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
 

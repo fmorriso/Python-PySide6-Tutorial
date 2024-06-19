@@ -1,6 +1,7 @@
 # Python Pyside6 Tutorial
 
-
+## References
+[PySide6 Tutorial](https://www.pythonguis.com/pyside6-tutorial/)
 
 ## Getting started
 
