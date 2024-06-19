@@ -1,7 +1,9 @@
 # Python Pyside6 Tutorial
 
 ## References
-[PySide6 Tutorial](https://www.pythonguis.com/pyside6-tutorial/)
+* [PySide6 WiKi](https://wiki.qt.io/Qt_for_Python)
+* [PySide6 Tutorial](https://www.pythonguis.com/pyside6-tutorial/)
+* [other tutorials](https://doc.qt.io/qtforpython-6/tutorials/index.html)
 
 ## Getting started
 
