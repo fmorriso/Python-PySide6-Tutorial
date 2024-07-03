@@ -1,3 +1,4 @@
+from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QDialog, QLineEdit, QPushButton, QVBoxLayout
 
 
@@ -6,11 +7,26 @@ class DialogFormVerticalLayout(QDialog):
     def __init__(self, parent=None):
         super(DialogFormVerticalLayout, self).__init__(parent)
         self.setWindowTitle("Example PySide6 Dialog Form")
-        # set width and height
-        self.setFixedSize(512, 384)
+        # used fixed size for dialog (will use PyAutoGUI later on to scale to percent of device size)
+        dialog_width = 512
+        dialog_height = 384
+
+        # set dialog width and height
+        self.setFixedSize(dialog_width, dialog_height)
+
         # Create widgets
-        self.edit = QLineEdit("Write my name here..")
+        self.edit = QLineEdit("")
+        self.edit.setFixedSize(dialog_width * 0.9, dialog_height * 0.1)
+        self.edit.setToolTip('Type your name here')
+
+        button_font = QFont()
+        button_font.setBold(True)
+        button_font.setPointSize(dialog_height * 0.05)
+
         self.button = QPushButton("Show Greetings")
+        self.button.setFont(button_font)
+        self.button.setFixedSize(dialog_width * 0.9, dialog_height * 0.1)
+
         # Create vertical layout and add widgets to it
         self.vertical_layout = QVBoxLayout(self)
         self.vertical_layout.addWidget(self.edit)
