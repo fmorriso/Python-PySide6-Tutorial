@@ -2,7 +2,7 @@ import sys
 
 import PySide6.QtCore
 from PySide6.QtWidgets import QApplication
-from dialog_form import DialogForm
+from dialog_form_vertical_layout import DialogFormVerticalLayout
 
 
 def get_python_version() -> str:
@@ -13,7 +13,7 @@ def show_dialog_form():
     # Create the Qt Application
     app = QApplication(sys.argv)
     # Create and show the form
-    form = DialogForm()
+    form = DialogFormVerticalLayout()
     form.show()
     # Run the main Qt loop
     sys.exit(app.exec())

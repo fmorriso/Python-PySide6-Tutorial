@@ -1,5 +1,5 @@
-# Python Pyside6 Tutorial
-
+# Python PySide6 Tutorial
+Some examples from the PySide6 Tutorials page
 ## References
 * [Creating Dialogs with Qt Designer](https://www.pythonguis.com/tutorials/pyside6-creating-dialogs-qt-designer/)
 * [QInputDialog](https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QInputDialog.html#PySide6.QtWidgets.QInputDialog)
@@ -8,6 +8,20 @@
 * [PySide6 WiKi](https://wiki.qt.io/Qt_for_Python)
 * [PySide6 Tutorial](https://www.pythonguis.com/pyside6-tutorial/)
 * [other tutorials](https://doc.qt.io/qtforpython-6/tutorials/index.html)
+## History
+
+| Date       | Description                   |
+|:-----------|:------------------------------|
+| 2024-06-19 | Initial creation              |
+| 2024-07-03 | Added Dialog tutorial example |
+## Tools Used
+ | Tool    |  Version |
+ |:--------|---------:|
+ | Python  |   3.12.4 |
+ | PySide6 |    6.7.2 |
+ | Qt      |    6.7.2 |
+ | VSCode  |   1.91.0 |
+ | PyCharm | 2024.1.1 |
 
 ## Getting started
 
