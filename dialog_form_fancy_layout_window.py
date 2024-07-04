@@ -4,7 +4,7 @@ from PySide6.QtCore import QSize
 from PySide6.QtGui import QFont, QColor, QColorConstants
 from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
 
-from color import Color
+from coloredwidget import ColoredWidget
 from settings import Settings
 
 
@@ -34,18 +34,18 @@ class DialogFormFancyLayout(QMainWindow):
         layout1.setContentsMargins(0,0,0,0)
         layout1.setSpacing(20)
 
-        layout2.addWidget(Color(QColorConstants.Red))
-        layout2.addWidget(Color(QColorConstants.Yellow))
-        layout2.addWidget(Color(QColorConstants.DarkMagenta)) # 'purple
+        layout2.addWidget(ColoredWidget(QColorConstants.Red))
+        layout2.addWidget(ColoredWidget(QColorConstants.Yellow))
+        layout2.addWidget(ColoredWidget(QColorConstants.DarkMagenta)) # 'purple
 
         layout1.addLayout( layout2 )
 
-        layout1.addWidget(Color(QColorConstants.DarkGreen))
+        layout1.addWidget(ColoredWidget(QColorConstants.DarkGreen))
 
-        layout3.addWidget(Color(QColorConstants.Red))
+        layout3.addWidget(ColoredWidget(QColorConstants.Red))
         lphs_orange = QColor(233,119,23)
-        layout3.addWidget(Color(lphs_orange))  # Lewis-Palmer High School Orange
-        layout3.addWidget(Color(QColorConstants.Magenta))
+        layout3.addWidget(ColoredWidget(lphs_orange))  # Lewis-Palmer High School Orange
+        layout3.addWidget(ColoredWidget(QColorConstants.Magenta))
 
         layout1.addLayout( layout3 )
 

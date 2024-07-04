@@ -2,10 +2,10 @@ from PySide6.QtGui import QPalette, QColor
 from PySide6.QtWidgets import QWidget
 
 
-class Color(QWidget):
+class ColoredWidget(QWidget):
 
     def __init__(self, color):
-        super(Color, self).__init__()
+        super(ColoredWidget, self).__init__()
         self.setAutoFillBackground(True)
 
         palette = self.palette()
