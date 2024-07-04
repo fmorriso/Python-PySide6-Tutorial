@@ -1,17 +1,17 @@
 # https://www.pythonguis.com/tutorials/pyside6-layouts/
 
 from PySide6.QtCore import QSize
-from PySide6.QtGui import QFont
+from PySide6.QtGui import QFont, QColor, QColorConstants
 from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
 
 from color import Color
 from settings import Settings
 
 
-class FancyLayoutMainWindow(QMainWindow):
+class DialogFormFancyLayout(QMainWindow):
 
     def __init__(self):
-        super(FancyLayoutMainWindow, self).__init__()
+        super(DialogFormFancyLayout, self).__init__()
 
         self.setWindowTitle("Fancy PySide6 Layout Example")
 
@@ -34,16 +34,18 @@ class FancyLayoutMainWindow(QMainWindow):
         layout1.setContentsMargins(0,0,0,0)
         layout1.setSpacing(20)
 
-        layout2.addWidget(Color('red'))
-        layout2.addWidget(Color('yellow'))
-        layout2.addWidget(Color('purple'))
+        layout2.addWidget(Color(QColorConstants.Red))
+        layout2.addWidget(Color(QColorConstants.Yellow))
+        layout2.addWidget(Color(QColorConstants.DarkMagenta)) # 'purple
 
         layout1.addLayout( layout2 )
 
-        layout1.addWidget(Color('green'))
+        layout1.addWidget(Color(QColorConstants.DarkGreen))
 
-        layout3.addWidget(Color('red'))
-        layout3.addWidget(Color('purple'))
+        layout3.addWidget(Color(QColorConstants.Red))
+        lphs_orange = QColor(233,119,23)
+        layout3.addWidget(Color(lphs_orange))  # Lewis-Palmer High School Orange
+        layout3.addWidget(Color(QColorConstants.Magenta))
 
         layout1.addLayout( layout3 )
 

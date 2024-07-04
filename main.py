@@ -6,7 +6,7 @@ import pyautogui as pg
 
 from dialog_form_grid_layout import DialogFormGridLayout
 from dialog_form_vertical_layout import DialogFormVerticalLayout
-from fancy_layout_window import FancyLayoutMainWindow
+from dialog_form_fancy_layout_window import DialogFormFancyLayout
 
 
 def get_python_version() -> str:
@@ -37,7 +37,7 @@ def show_fancy_layout_window():
     # Create the Qt Application
     app = QApplication(sys.argv)
     # Create and show the form
-    window = FancyLayoutMainWindow()
+    window = DialogFormFancyLayout()
     window.show()
     # Run the main Qt loop
     sys.exit(app.exec())
@@ -51,6 +51,5 @@ if __name__ == '__main__':
 
     # uncomment one of the following at a time to see different layout examples:
     # show_vertical_dialog_form()
-    show_grid_dialog_form()
-    # show_fancy_layout_window()
-#
+    # show_grid_dialog_form()
+    show_fancy_layout_window()

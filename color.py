@@ -9,5 +9,8 @@ class Color(QWidget):
         self.setAutoFillBackground(True)
 
         palette = self.palette()
-        palette.setColor(QPalette.Window, QColor(color))
+        if color is QColor:
+            palette.setColor(QPalette.Window, color)
+        else:
+            palette.setColor(QPalette.Window, QColor(color))
         self.setPalette(palette)
