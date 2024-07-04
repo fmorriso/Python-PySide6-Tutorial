@@ -56,5 +56,17 @@ class DialogFormGridLayout(QDialog):
 
         self.form_layout.addRow(QLabel('Gender: '), self.horizontal_layout2)
 
+        # Section 4 - OK and Cancel buttons
+        self.button_row_layout = QHBoxLayout()
+        self.button_row_layout.setContentsMargins(0, dialog_height / 3, 0, 0)
+
+        self.Ok_button = QPushButton('Ok')
+        self.Cancel_button = QPushButton('Cancel')
+
+        for item in [self.Ok_button, self.Cancel_button]:
+            self.button_row_layout.addWidget(item)
+
+        self.form_layout.addRow(self.button_row_layout)
+
         # Set dialog layout
         self.setLayout(self.form_layout)
