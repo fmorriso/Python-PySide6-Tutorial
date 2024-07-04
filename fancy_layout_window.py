@@ -1,8 +1,8 @@
 # https://www.pythonguis.com/tutorials/pyside6-layouts/
 
 from PySide6.QtCore import QSize
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
-from PySide6.QtGui import QPalette, QColor, QFont
+from PySide6.QtGui import QFont
+from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
 
 from color import Color
 from settings import Settings

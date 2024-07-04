@@ -1,3 +1,4 @@
+from PySide6.QtCore import QSize
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QDialog, QLineEdit, QPushButton, QVBoxLayout
 
@@ -17,7 +18,7 @@ class DialogFormVerticalLayout(QDialog):
         dialog_height = settings.screen_height #384
 
         # set dialog width and height
-        self.setFixedSize(dialog_width, dialog_height)
+        self.setFixedSize(QSize(dialog_width, dialog_height))
 
         # Create widgets
         self.edit = QLineEdit("")
