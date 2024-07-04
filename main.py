@@ -47,6 +47,8 @@ if __name__ == '__main__':
     print(f'PySide6 version: {PySide6.__version__}')
     print(f'Qt version: {PySide6.QtCore.__version__}')
 
-    show_vertical_dialog_form()
+    # uncomment one of the following at a time to see different layout examples:
+    # show_vertical_dialog_form()
     # show_grid_dialog_form()
-    # show_fancy_layout_window()
+    show_fancy_layout_window()
+#
