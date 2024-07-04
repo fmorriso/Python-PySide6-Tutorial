@@ -21,8 +21,10 @@ Some examples from the PySide6 Tutorials page
  | Python  |   3.12.4 |
  | PySide6 |    6.7.2 |
  | Qt      |    6.7.2 |
+ | PyAutoGUI | 0.9.54 |
  | VSCode  |   1.91.0 |
  | PyCharm | 2024.1.1 |
+ 
 
 ## Getting started
 

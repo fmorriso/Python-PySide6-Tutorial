@@ -6,13 +6,13 @@ import pyautogui
 class Settings:
     ONE_TIME_COUNT: ClassVar[int] = 0  # helps with one-time actions
 
-    def __init__(self):
+    def __init__(self, pct: float = 0.5):
         """Initialize the game's settings."""
         # Screen settings
 
         # calculate game size as a percentage of device screen size
         device_width, device_height = pyautogui.size()
-        self.screenPct: float = float(0.4)
+        self.screenPct: float = float(pct)
 
         # ratio to original hard-coded values of 1280 (w) x 720 (h) in the original code
         ratio_height: float = device_height / 720.0

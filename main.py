@@ -2,6 +2,7 @@ import sys
 
 import PySide6.QtCore
 from PySide6.QtWidgets import QApplication
+import pyautogui as pg
 
 from dialog_form_grid_layout import DialogFormGridLayout
 from dialog_form_vertical_layout import DialogFormVerticalLayout
@@ -46,6 +47,7 @@ if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
     print(f'PySide6 version: {PySide6.__version__}')
     print(f'Qt version: {PySide6.QtCore.__version__}')
+    print(f'PyAutoGUI version: {pg.__version__}')
 
     # uncomment one of the following at a time to see different layout examples:
     # show_vertical_dialog_form()

@@ -16,9 +16,9 @@ class FancyLayoutMainWindow(QMainWindow):
         self.setWindowTitle("Fancy PySide6 Layout Example")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings()
-        dialog_width = settings.screen_width # 512
-        dialog_height = settings.screen_height #384
+        settings = Settings(pct=0.45)
+        dialog_width = settings.screen_width
+        dialog_height = settings.screen_height
 
         default_font = QFont('Monospace')
         default_font.setPointSize(dialog_height * 0.05)
