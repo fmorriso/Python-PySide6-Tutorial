@@ -1,7 +1,7 @@
 from PySide6.QtWidgets import QDialog, QLineEdit, QPushButton, QVBoxLayout
 
 
-class DialogFormGridLayout(QDialog):
+class DialogFormLayout(QDialog):
 
     def __init__(self, parent=None):
-        super(DialogFormGridLayout, self).__init__(parent)
+        super(DialogFormLayout, self).__init__(parent)

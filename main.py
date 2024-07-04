@@ -2,7 +2,7 @@ import sys
 
 import PySide6.QtCore
 from PySide6.QtWidgets import QApplication
-from dialog_form_vertical_layout import DialogFormVerticalLayout
+from dialog_form_layout import DialogFormVerticalLayout
 
 
 def get_python_version() -> str:
