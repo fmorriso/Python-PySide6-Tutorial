@@ -19,9 +19,10 @@ class DialogFormVerticalLayout(QDialog):
         self.edit.setFixedSize(dialog_width * 0.9, dialog_height * 0.1)
         self.edit.setToolTip('Type your name here')
 
-        button_font = QFont()
+        button_font = QFont('Monospace')
         button_font.setBold(True)
         button_font.setPointSize(dialog_height * 0.05)
+        # button_font.setStyleHint(QFont.StyleHint.Monospace)
 
         self.button = QPushButton("Show Greetings")
         self.button.setFont(button_font)
@@ -36,6 +37,6 @@ class DialogFormVerticalLayout(QDialog):
         # Add button signal (i.g., event listener) to greetings slot
         self.button.clicked.connect(self.greetings)
 
-# Greets the user
+    # Greets the user
     def greetings(self):
         print(f"Hello {self.edit.text()}")
