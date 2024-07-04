@@ -4,7 +4,8 @@ import PySide6.QtCore
 from PySide6.QtWidgets import QApplication
 
 from dialog_form_grid_layout import DialogFormGridLayout
-from dialog_form_layout import DialogFormVerticalLayout
+from dialog_form_vertical_layout import DialogFormVerticalLayout
+from fancy_layout_window import FancyLayoutMainWindow
 
 
 def get_python_version() -> str:
@@ -31,9 +32,20 @@ def show_grid_dialog_form():
     sys.exit(app.exec())
 
 
+def show_fancy_layout_window():
+    # Create the Qt Application
+    app = QApplication(sys.argv)
+    # Create and show the form
+    window = FancyLayoutMainWindow()
+    window.show()
+    # Run the main Qt loop
+    sys.exit(app.exec())
+
+
 if __name__ == '__main__':
     print(f'Python version: {get_python_version()}')
     print(f'PySide6 version: {PySide6.__version__}')
     print(f'Qt version: {PySide6.QtCore.__version__}')
     # show_vertical_dialog_form()
-    show_grid_dialog_form()
+    # show_grid_dialog_form()
+    show_fancy_layout_window()

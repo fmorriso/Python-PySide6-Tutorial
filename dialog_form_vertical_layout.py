@@ -23,7 +23,6 @@ class DialogFormVerticalLayout(QDialog):
         button_font = QFont('Monospace')
         button_font.setBold(True)
         button_font.setPointSize(dialog_height * 0.05)
-        # button_font.setStyleHint(QFont.StyleHint.Monospace)
 
         self.button = QPushButton("Show Greetings")
         self.button.setFont(button_font)
