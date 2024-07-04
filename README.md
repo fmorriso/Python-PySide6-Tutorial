@@ -11,10 +11,11 @@ Some examples from the PySide6 Tutorials page
 * [PySide6 Tutorial - layouts](https://www.youtube.com/watch?v=Mmo0Lqj7oGk)
 ## History
 
-| Date       | Description                   |
-|:-----------|:------------------------------|
-| 2024-06-19 | Initial creation              |
-| 2024-07-03 | Added Dialog tutorial example |
+| Date       | Description                       |
+|:-----------|:----------------------------------|
+| 2024-06-19 | Initial creation                  |
+| 2024-07-03 | Added Dialog tutorial example     |
+| 2024-07-04 | Added PyAutoGUI to scale examples |
 ## Tools Used
  | Tool    |  Version |
  |:--------|---------:|
