@@ -1,5 +1,6 @@
-from PySide6.QtCore import QSize
-from PySide6.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QFormLayout, QHBoxLayout
+from PySide6.QtCore import QSize, Qt
+from PySide6.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QFormLayout, QHBoxLayout, \
+    QRadioButton
 
 
 class DialogFormGridLayout(QDialog):
@@ -37,11 +38,23 @@ class DialogFormGridLayout(QDialog):
         self.age_label = QLabel('Age')
         self.age_input = QLineEdit()
 
-        # add lables and corresponding input areas in the correct order
+        # add labels and corresponding input areas in the correct order
         for item in [self.address_label, self.address_input, self.age_label, self.age_input]:
             self.vertical_layout2.addWidget(item)
 
         self.form_layout.addRow(self.vertical_layout2)
+
+        # Section 3 Add radio buttons
+        self.horizontal_layout2 = QHBoxLayout()
+        self.horizontal_layout2.setAlignment(Qt.AlignLeft)
+
+        self.radio1 = QRadioButton('Male')
+        self.radio2 = QRadioButton('Female')
+
+        for item in [self.radio1, self.radio2]:
+            self.horizontal_layout2.addWidget(item)
+
+        self.form_layout.addRow(QLabel('Gender: '), self.horizontal_layout2)
 
         # Set dialog layout
         self.setLayout(self.form_layout)
