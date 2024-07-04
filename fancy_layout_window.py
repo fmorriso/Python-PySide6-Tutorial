@@ -5,6 +5,7 @@ from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QHBoxLayout, Q
 from PySide6.QtGui import QPalette, QColor, QFont
 
 from color import Color
+from settings import Settings
 
 
 class FancyLayoutMainWindow(QMainWindow):
@@ -12,11 +13,12 @@ class FancyLayoutMainWindow(QMainWindow):
     def __init__(self):
         super(FancyLayoutMainWindow, self).__init__()
 
-        self.setWindowTitle("Fancy Layout Example")
+        self.setWindowTitle("Fancy PySide6 Layout Example")
 
-        # used fixed size for dialog (will use PyAutoGUI later on to scale to percent of device size)
-        dialog_width = 512
-        dialog_height = 384
+        # use scaled size via PyAutoGUI:
+        settings = Settings()
+        dialog_width = settings.screen_width # 512
+        dialog_height = settings.screen_height #384
 
         default_font = QFont('Monospace')
         default_font.setPointSize(dialog_height * 0.05)
