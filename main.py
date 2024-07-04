@@ -50,7 +50,7 @@ if __name__ == '__main__':
     print(f'PyAutoGUI version: {pg.__version__}')
 
     # uncomment one of the following at a time to see different layout examples:
-    # show_vertical_dialog_form()
+    show_vertical_dialog_form()
     # show_grid_dialog_form()
-    show_fancy_layout_window()
+    # show_fancy_layout_window()
 #

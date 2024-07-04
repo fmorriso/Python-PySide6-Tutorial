@@ -12,7 +12,7 @@ class DialogFormVerticalLayout(QDialog):
         self.setWindowTitle("Example PySide6 Dialog Form with vertical layout")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings()
+        settings = Settings(pct = 0.45)
         dialog_width = settings.screen_width # 512
         dialog_height = settings.screen_height #384
 
