@@ -13,7 +13,7 @@ class DialogFormGridLayout(QDialog):
         self.setWindowTitle("Example PySide6 Dialog Form with grid layout")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings(pct = 0.45)
+        settings = Settings(pct=0.45)
         dialog_width = settings.screen_width
         dialog_height = settings.screen_height
 
@@ -23,18 +23,18 @@ class DialogFormGridLayout(QDialog):
         self.form_layout = QFormLayout()
 
         # Section 1 Name label and text box
-        self.horizontal_layout1 = QHBoxLayout()
+        self.name_area_layout = QHBoxLayout()
 
         self.name_label = QLabel('Name')
         self.name_input = QLineEdit()
 
-        self.horizontal_layout1.addWidget(self.name_label)
-        self.horizontal_layout1.addWidget(self.name_input)
+        self.name_area_layout.addWidget(self.name_label)
+        self.name_area_layout.addWidget(self.name_input)
 
-        self.form_layout.addRow(self.horizontal_layout1)
+        self.form_layout.addRow(self.name_area_layout)
 
-        # Section 2 Address and Age input
-        self.vertical_layout2 = QVBoxLayout()
+        # Section 2 Address and Age input area
+        self.address_age_area_layout = QVBoxLayout()
 
         self.address_label = QLabel('Address')
         self.address_input = QLineEdit()
@@ -44,21 +44,21 @@ class DialogFormGridLayout(QDialog):
 
         # add labels and corresponding input areas in the correct order
         for item in [self.address_label, self.address_input, self.age_label, self.age_input]:
-            self.vertical_layout2.addWidget(item)
+            self.address_age_area_layout.addWidget(item)
 
-        self.form_layout.addRow(self.vertical_layout2)
+        self.form_layout.addRow(self.address_age_area_layout)
 
         # Section 3 Add radio buttons
-        self.horizontal_layout2 = QHBoxLayout()
-        self.horizontal_layout2.setAlignment(Qt.AlignLeft)
+        self.gender_area_layout = QHBoxLayout()
+        self.gender_area_layout.setAlignment(Qt.AlignLeft)
 
         self.radio1 = QRadioButton('Male')
         self.radio2 = QRadioButton('Female')
 
         for item in [self.radio1, self.radio2]:
-            self.horizontal_layout2.addWidget(item)
+            self.gender_area_layout.addWidget(item)
 
-        self.form_layout.addRow(QLabel('Gender: '), self.horizontal_layout2)
+        self.form_layout.addRow(QLabel('Gender: '), self.gender_area_layout)
 
         # Section 4 - OK and Cancel buttons
         self.button_row_layout = QHBoxLayout()
