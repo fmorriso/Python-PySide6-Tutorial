@@ -33,7 +33,7 @@ class DialogFormFancyLayout(QMainWindow):
         inner_right_layout = QVBoxLayout()
 
         outer_horizontal_layout.setContentsMargins(0,0,0,0)
-        outer_horizontal_layout.setSpacing(20)
+        outer_horizontal_layout.setSpacing(20 * settings.screenPct)
 
         for item in [ColoredWidget(QColorConstants.Red),
                      ColoredWidget(QColorConstants.Yellow),
