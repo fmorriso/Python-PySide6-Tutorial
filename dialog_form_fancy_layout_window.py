@@ -27,28 +27,34 @@ class DialogFormFancyLayout(QMainWindow):
         # set dialog width and height
         self.setFixedSize(QSize(dialog_width, dialog_height))
 
-        layout1 = QHBoxLayout()
-        layout2 = QVBoxLayout()
-        layout3 = QVBoxLayout()
+        outer_horizontal_layout = QHBoxLayout()
+        inner_left_layout = QVBoxLayout()
+        inner_middle_layout = QVBoxLayout()
+        inner_right_layout = QVBoxLayout()
 
-        layout1.setContentsMargins(0,0,0,0)
-        layout1.setSpacing(20)
+        outer_horizontal_layout.setContentsMargins(0,0,0,0)
+        outer_horizontal_layout.setSpacing(20)
 
-        layout2.addWidget(ColoredWidget(QColorConstants.Red))
-        layout2.addWidget(ColoredWidget(QColorConstants.Yellow))
-        layout2.addWidget(ColoredWidget(QColorConstants.DarkMagenta)) # 'purple
+        for item in [ColoredWidget(QColorConstants.Red),
+                     ColoredWidget(QColorConstants.Yellow),
+                     ColoredWidget(QColorConstants.DarkMagenta)]:
+            inner_left_layout.addWidget(item)
 
-        layout1.addLayout( layout2 )
+        # left
+        outer_horizontal_layout.addLayout( inner_left_layout )
 
-        layout1.addWidget(ColoredWidget(QColorConstants.DarkGreen))
+        # middle
+        inner_middle_layout.addWidget(ColoredWidget(QColorConstants.DarkGreen))
+        outer_horizontal_layout.addLayout(inner_middle_layout)
 
-        layout3.addWidget(ColoredWidget(QColorConstants.Red))
+        # right
+        inner_right_layout.addWidget(ColoredWidget(QColorConstants.Red))
         lphs_orange = QColor(233,119,23)
-        layout3.addWidget(ColoredWidget(lphs_orange))  # Lewis-Palmer High School Orange
-        layout3.addWidget(ColoredWidget(QColorConstants.Magenta))
+        inner_right_layout.addWidget(ColoredWidget(lphs_orange))  # Lewis-Palmer High School Orange
+        inner_right_layout.addWidget(ColoredWidget(QColorConstants.Magenta))
 
-        layout1.addLayout( layout3 )
+        outer_horizontal_layout.addLayout( inner_right_layout )
 
         widget = QWidget()
-        widget.setLayout(layout1)
+        widget.setLayout(outer_horizontal_layout)
         self.setCentralWidget(widget)
