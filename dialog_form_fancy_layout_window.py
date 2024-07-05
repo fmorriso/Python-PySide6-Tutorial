@@ -32,8 +32,8 @@ class DialogFormFancyLayout(QMainWindow):
         inner_middle_layout = QVBoxLayout()
         inner_right_layout = QVBoxLayout()
 
-        outer_horizontal_layout.setContentsMargins(0,0,0,0)
-        outer_horizontal_layout.setSpacing(20 * settings.screenPct)
+        outer_horizontal_layout.setContentsMargins(0, 0, 0, 0)
+        outer_horizontal_layout.setSpacing(int(20 * settings.screenPct))
 
         for item in [ColoredWidget(QColorConstants.Red),
                      ColoredWidget(QColorConstants.Yellow),
@@ -41,19 +41,19 @@ class DialogFormFancyLayout(QMainWindow):
             inner_left_layout.addWidget(item)
 
         # left
-        outer_horizontal_layout.addLayout( inner_left_layout )
+        outer_horizontal_layout.addLayout(inner_left_layout)
 
         # middle
         inner_middle_layout.addWidget(ColoredWidget(QColorConstants.DarkGreen))
         outer_horizontal_layout.addLayout(inner_middle_layout)
 
         # right
-        inner_right_layout.addWidget(ColoredWidget(QColorConstants.Red))
-        lphs_orange = QColor(233,119,23)
+        inner_right_layout.addWidget(ColoredWidget(QColorConstants.DarkCyan))
+        lphs_orange = QColor(233, 119, 23)
         inner_right_layout.addWidget(ColoredWidget(lphs_orange))  # Lewis-Palmer High School Orange
         inner_right_layout.addWidget(ColoredWidget(QColorConstants.Magenta))
 
-        outer_horizontal_layout.addLayout( inner_right_layout )
+        outer_horizontal_layout.addLayout(inner_right_layout)
 
         widget = QWidget()
         widget.setLayout(outer_horizontal_layout)
