@@ -27,7 +27,17 @@ Some examples from the PySide6 Tutorials page
  | VSCode  |   1.91.0 |
  | PyCharm | 2024.1.1 |
  
+## Example Console Output
+```text
+Python version: 3.12.4
+PySide6 version: 6.7.2
+Qt version: 6.7.2
+PyAutoGUI version: 0.9.54
+ratios: height: 2.22, width: 2.00
+scaled width: 1100, height: 700
 
+Process finished with exit code 0
+```
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
