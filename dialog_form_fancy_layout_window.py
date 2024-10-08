@@ -10,10 +10,10 @@ from settings import Settings
 
 class DialogFormFancyLayout(QMainWindow):
 
-    def __init__(self):
+    def __init__(self, title):
         super(DialogFormFancyLayout, self).__init__()
 
-        self.setWindowTitle("Fancy PySide6 Layout Example")
+        self.setWindowTitle(f"Fancy PySide6 Layout Example - {title}")
 
         # use scaled size via PyAutoGUI:
         settings = Settings(pct=0.45)
