@@ -30,9 +30,9 @@ Some examples from the PySide6 Tutorials page
  
 ## Example Console Output
 ```text
-Python version: 3.12.4
-PySide6 version: 6.7.2
-Qt version: 6.7.2
+Python version: 3.13.0
+PySide6 version: 6.7.3
+Qt version: 6.7.3
 PyAutoGUI version: 0.9.54
 ratios: height: 2.22, width: 2.00
 scaled width: 1100, height: 700
