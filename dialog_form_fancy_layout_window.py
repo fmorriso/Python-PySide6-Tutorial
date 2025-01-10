@@ -4,8 +4,8 @@ from PySide6.QtCore import QSize
 from PySide6.QtGui import QFont, QColor, QColorConstants
 from PySide6.QtWidgets import QMainWindow, QWidget, QHBoxLayout, QVBoxLayout
 
-from coloredwidget import ColoredWidget
-from settings import Settings
+from colored_widget import ColoredWidget
+from gui_settings import GuiSettings
 
 
 class DialogFormFancyLayout(QMainWindow):
@@ -16,7 +16,7 @@ class DialogFormFancyLayout(QMainWindow):
         self.setWindowTitle(f"Fancy PySide6 Layout Example - {title}")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings(pct=0.45)
+        settings = GuiSettings(pct=0.45)
         dialog_width = settings.screen_width
         dialog_height = settings.screen_height
 

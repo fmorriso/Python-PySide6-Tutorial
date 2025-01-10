@@ -2,7 +2,7 @@ from PySide6.QtCore import QSize
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import QDialog, QLineEdit, QPushButton, QVBoxLayout
 
-from settings import Settings
+from gui_settings import GuiSettings
 
 
 class DialogFormVerticalLayout(QDialog):
@@ -13,7 +13,7 @@ class DialogFormVerticalLayout(QDialog):
         self.setWindowTitle("Example PySide6 Dialog Form with vertical layout")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings(pct = 0.45)
+        settings = GuiSettings(pct = 0.45)
         dialog_width = settings.screen_width # 512
         dialog_height = settings.screen_height #384
 

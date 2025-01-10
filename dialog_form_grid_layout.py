@@ -2,7 +2,7 @@ from PySide6.QtCore import QSize, Qt
 from PySide6.QtWidgets import QDialog, QLabel, QLineEdit, QPushButton, QVBoxLayout, QFormLayout, QHBoxLayout, \
     QRadioButton
 
-from settings import Settings
+from gui_settings import GuiSettings
 
 
 class DialogFormGridLayout(QDialog):
@@ -13,7 +13,7 @@ class DialogFormGridLayout(QDialog):
         self.setWindowTitle("Example PySide6 Dialog Form with grid layout")
 
         # use scaled size via PyAutoGUI:
-        settings = Settings(pct=0.45)
+        settings = GuiSettings(pct=0.45)
         dialog_width = settings.screen_width
         dialog_height = settings.screen_height
 

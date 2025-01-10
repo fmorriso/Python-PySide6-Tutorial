@@ -18,15 +18,18 @@ Some examples from the PySide6 Tutorials page
 | 2024-07-03 | Added Dialog tutorial example     |
 | 2024-07-04 | Added PyAutoGUI to scale examples |
 | 2024-10-07 | Upgraded to Python 3.13.0         |
+| 2025-01-10 | Upgraded to Python 3.13.1         |
+
+
 ## Tools Used
  | Tool      |  Version |
  |:----------|---------:|
- | Python    |   3.13.0 |
- | PySide6   |    6.7.3 |
- | Qt        |    6.7.3 |
+ | Python    |   3.13.1 |
+ | PySide6   |  6.8.1.1 |
+ | Qt        |    6.8.1 |
  | PyAutoGUI |   0.9.54 |
- | VSCode    |   1.94.0 |
- | PyCharm   | 2024.2.3 |
+ | VSCode    |   1.96.2 |
+ | PyCharm   | 2024.3.1 |
  
 ## Example Console Output
 ```text
