@@ -12,13 +12,13 @@ Some examples from the PySide6 Tutorials page
 * [QColorConstants](https://doc.qt.io/qt-6/qcolorconstants.html)
 ## History
 
-| Date       | Description                       |
-|:-----------|:----------------------------------|
-| 2024-06-19 | Initial creation                  |
-| 2024-07-03 | Added Dialog tutorial example     |
-| 2024-07-04 | Added PyAutoGUI to scale examples |
-| 2024-10-07 | Upgraded to Python 3.13.0         |
-| 2025-01-10 | Upgraded to Python 3.13.1         |
+| Date       | Description                           |
+|:-----------|:--------------------------------------|
+| 2024-06-19 | Initial creation                      |
+| 2024-07-03 | Added Dialog tutorial example         |
+| 2024-07-04 | Added PyAutoGUI to scale examples     |
+| 2024-10-07 | Upgraded to Python 3.13.0             |
+| 2025-01-10 | Upgraded to Python 3.13.1             |
 | 2025-02-03 | Verify code runs with latest packages |
 
 
