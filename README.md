@@ -20,16 +20,17 @@ Some examples from the PySide6 Tutorials page
 | 2024-10-07 | Upgraded to Python 3.13.0             |
 | 2025-01-10 | Upgraded to Python 3.13.1             |
 | 2025-02-03 | Verify code runs with latest packages |
+| 2025-02-10 | Upgrade to Python 3.13.2              |
 
 
 ## Tools Used
  | Tool      |  Version |
  |:----------|---------:|
- | Python    |   3.13.1 |
- | PySide6   |    6.8.2 |
+ | Python    |   3.13.2 |
+ | PySide6   |  6.8.2.1 |
  | Qt        |    6.8.2 |
  | PyAutoGUI |   0.9.54 |
- | VSCode    |   1.96.4 |
+ | VSCode    |   1.97.0 |
  | PyCharm   | 2024.3.2 |
  
 ## Example Console Output
