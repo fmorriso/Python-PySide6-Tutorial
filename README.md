@@ -31,13 +31,13 @@ Some examples from the PySide6 Tutorials page
  | Qt        |    6.8.2 |
  | PyAutoGUI |   0.9.54 |
  | VSCode    |   1.97.0 |
- | PyCharm   | 2024.3.2 |
+ | PyCharm   | 2024.3.5 |
  
 ## Example Console Output
 ```text
 Python version: 3.13.0
-PySide6 version: 6.7.3
-Qt version: 6.7.3
+PySide6 version: 6.8.2.1
+Qt version: 6.8.2
 PyAutoGUI version: 0.9.54
 ratios: height: 2.22, width: 2.00
 scaled width: 1100, height: 700
