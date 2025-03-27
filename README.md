@@ -27,10 +27,10 @@ Some examples from the PySide6 Tutorials page
  | Tool      |  Version |
  |:----------|---------:|
  | Python    |   3.13.2 |
- | PySide6   |  6.8.2.1 |
- | Qt        |    6.8.2 |
+ | PySide6   |    6.8.3 |
+ | Qt        |    6.8.3 |
  | PyAutoGUI |   0.9.54 |
- | VSCode    |   1.97.0 |
+ | VSCode    |   1.98.2 |
  | PyCharm   | 2024.3.5 |
  
 ## Example Console Output
