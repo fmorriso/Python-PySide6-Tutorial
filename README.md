@@ -1,5 +1,5 @@
 # Python PySide6 Tutorial
-Some examples from the PySide6 Tutorials page
+Some examples from the PySide6 Tutorials page augmented with some scaling based on a percentage of available device screen size.
 ## References
 * [Creating Dialogs with Qt Designer](https://www.pythonguis.com/tutorials/pyside6-creating-dialogs-qt-designer/)
 * [QInputDialog](https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QInputDialog.html#PySide6.QtWidgets.QInputDialog)
@@ -21,6 +21,7 @@ Some examples from the PySide6 Tutorials page
 | 2025-01-10 | Upgraded to Python 3.13.1             |
 | 2025-02-03 | Verify code runs with latest packages |
 | 2025-02-10 | Upgrade to Python 3.13.2              |
+| 2025-03-30 | Switch from GitLab to GitHub          |
 
 
 ## Tools Used
