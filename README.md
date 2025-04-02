@@ -22,14 +22,15 @@ Some examples from the PySide6 Tutorials page augmented with some scaling based 
 | 2025-02-03 | Verify code runs with latest packages |
 | 2025-02-10 | Upgrade to Python 3.13.2              |
 | 2025-03-30 | Switch from GitLab to GitHub          |
+| 2025-04-02 | Upgrade to PySide6 6.9.0 and Qt 6.9.0 |
 
 
 ## Tools Used
  | Tool      |  Version |
  |:----------|---------:|
  | Python    |   3.13.2 |
- | PySide6   |    6.8.3 |
- | Qt        |    6.8.3 |
+ | PySide6   |    6.9.0 |
+ | Qt        |    6.9.0 |
  | PyAutoGUI |   0.9.54 |
  | VSCode    |   1.98.2 |
  | PyCharm   | 2024.3.5 |
